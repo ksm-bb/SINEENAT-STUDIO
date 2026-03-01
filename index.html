@@ -351,17 +351,17 @@
            </div>
         )}
         {/* ✏️ [แก้ได้] แถบสีซ้ายตามช่องทาง — เปลี่ยน hex สีตามชื่อ channel */}
-        <div className="absolute left-2 top-3 bottom-3 w-1 rounded-full shadow-sm z-10" style={{ backgroundColor: task.channel === 'LINE' ? '#D5EDB5' : task.channel === 'FB' || task.channel === 'FACEBOOK' ? '#C0D5E9' : task.channel === 'IG' ? '#FFD3DE' : COLORS.purpleDeep }}></div>
+        <div className="absolute left-2 top-3 bottom-3 w-1 rounded-full shadow-sm z-10" style={{ backgroundColor: task.channel === 'LINE' ? '#FDFCE8' : task.channel === 'FB' || task.channel === 'FACEBOOK' ? '#FDFCE8' : task.channel === 'IG' ? '#FDFCE8' : COLORS.purpleDeep }}></div>
         <div className="pl-3 pr-1 relative z-10">
           <div className="flex justify-between items-start mb-1">
             <div className="flex items-center gap-2 min-w-0">
               <span className="font-bold text-base truncate" style={{ color: COLORS.textMain }}>{task.client}</span>
               {/* ✏️ [แก้ได้] Badge สีตาม channel — เพิ่ม channel ใหม่ได้โดยเพิ่ม case */}
               <span className={`text-[7px] px-1.5 py-0.5 rounded-md font-black uppercase border ${
-                task.channel === 'LINE' ? 'text-[#b8d394] bg-[#e7f9d4]/10 border-[#b8d394]/20' : 
-                task.channel === 'FB' || task.channel === 'FACEBOOK' ? 'text-[#2A5C82] bg-[#6CA9D6]/10 border-[#6CA9D6]/20' : 
-                task.channel === 'IG' ? 'text-[#A38A30] bg-[#FCF6DE]/50 border-[#D4B856]/30' : 
-                task.channel === 'DISCORD' || task.channel === 'Discord' ? 'text-[#a76eaf] bg-[#f3d5f7]/10 border-[#a76eaf]/20' : 
+                task.channel === 'LINE' ? 'text-[#b8d394] bg-[#e7f9d4]/80 border-[#b8d394]' : 
+                task.channel === 'FB' || task.channel === 'FACEBOOK' ? 'text-[#2A5C82] bg-[#ffffff]/10 border-[#6CA9D6]' : 
+                task.channel === 'IG' ? 'text-[#A38A30] bg-[#ffffff]/80 border-[#D4B856]/30' : 
+                task.channel === 'DISCORD' || task.channel === 'Discord' ? 'text-[#a76eaf] bg-[#ffffff]/80 border-[#a76eaf]' : 
                 'bg-white/50 text-gray-400 border-gray-100'
               }`}>{task.channel}</span>
               {/* ✏️ [แก้ได้] ข้อความ badge ด่วน — เปลี่ยน "🔥 ด่วน" เป็นอื่น */}
@@ -1158,6 +1158,7 @@
   </script>
 </body>
 </html>
+
 
 
 
